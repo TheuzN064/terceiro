@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cabeçalho e banner */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-img {
+    width: 500px;
+    height: 700px;
+
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Botões */
+.cta {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: #fff;
+    padding: 15px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contato */
+.contato {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contato h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.contato p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contato .btn {
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #25d366, #20c65a); /* WhatsApp verde */
+}
+
+.contato .btn.instagram {
+    background: linear-gradient(135deg, #E1306C, #F77737); /* Instagram gradiente */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
